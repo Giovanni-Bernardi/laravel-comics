@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('home', 'MyController@home');
+
+Route::get('elem/{index}', 'MyController@elem')->name('elem');

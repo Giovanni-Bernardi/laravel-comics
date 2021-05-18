@@ -1,0 +1,177 @@
+
+#app{
+    header{
+        min-height: 175px;
+        width: 100%;
+        top: 0;
+        z-index: 100;
+        background-color: $color2;
+        box-shadow: rgb(0 0 0 / 12%) 0 1px 3px;
+
+        div.content-htop, div.header-bottom{
+            @include centring;
+        }
+
+        div.header-top{
+            height: 30px;
+            background-color: $color1;
+
+            img{
+                color: $color2;
+            }
+        }
+        div.header-bottom{
+            @include display-flex-row(center, space-between);
+            padding: 30px 0;
+
+            img{
+                width: 80px;
+            }
+            ul{
+                list-style: none;
+
+                li{
+                    display: inline-block;
+                    padding-right: 30px;
+                    cursor: pointer;
+                    position: relative;
+                }
+
+                li:hover {
+                    color: #0282F9;
+                }
+
+                li:hover::after {
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 3px;
+                    top: 100%;
+                    left: 0;
+                    background: #0282F9;
+                    transition: transform 0.5s;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                }
+            }
+            div.searchbar{
+                position: relative;
+                border-bottom: 2px solid $color1;
+
+                input{
+                    border: none;
+                    outline: none;
+                }
+                i{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+    
+    #jumbotron{
+        height: 450px;
+        margin-top: 20px;
+        background-image: url("/storage/assets/jumbotron.jpg");
+        background-size: cover;
+    }
+
+    footer{
+
+        .footer-top{
+            height: 450px;
+            background-image: url("/storage/assets/dc-logo-bg.png"), url("/storage/assets/footer-bg.jpg");
+            background-position: right 130px center, center;
+            background-repeat: no-repeat;
+            background-size: auto, cover;
+
+            .content-ftop{
+                height: 100%;
+                @include display-flex-column(flex-start, center);
+
+                .list{
+                    @include centring;
+                    @include display-flex-row(flex-start, flex-start);
+
+                    div[class*="list-"]{
+                        margin-right: 50px;
+
+                        ul{
+                            list-style: none;
+
+                            li{
+                                margin-bottom: 8px;
+
+                                h2{
+                                    color: $color2;
+                                    text-transform: uppercase;
+                                    margin-top: 10px;
+                                    margin-bottom: 20px;
+                                }
+                                a{
+                                    color: $color3;
+                                    text-decoration: none;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+                .content-under-list{
+                    @include centring;
+                    margin-top: 20px;
+
+                    p{
+                        color: $color3;
+
+                        span{
+                            color: $color1;
+                        }
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $color1;
+                    }
+                }
+            }
+
+        }
+        .footer-bottom{
+            background-color: #303030;
+            height: 120px;
+
+            .content-fbottom{
+                height: 100%;
+                @include centring;
+                @include display-flex-row(center, space-between);
+
+                a#sign-up{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    border: 2px solid $color1;
+                    padding: 12px;
+                    color: $color2;
+                }
+                div.social-links{
+
+                    ul{
+                        list-style: none;
+                        @include display-flex-row(center, center);
+
+                        li{
+                            padding-right: 10px;
+
+                            h2{
+                                text-transform: uppercase;
+                                color: $color1;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,36 @@
+
+$color1: #0282f9;
+$color2: #ffffff;
+$color3: #8e8e8a;
+$color4: #59c8ec;
+$color5: #ebebeb;
+
+@mixin centring {
+    width: 83.3%;
+    margin: 0 auto;
+}
+
+@mixin centring_elem {
+    width: 55%;
+    margin: 0 auto;
+}
+
+@mixin display-flex-row($var1, $var2) {
+    display: flex;
+    align-items: $var1;
+    justify-content: $var2;
+}
+
+@mixin display-flex-column($var1, $var2) {
+    display: flex;
+    flex-direction: column;
+    align-items: $var1;
+    justify-content: $var2;
+}
+
+@mixin title-info-bottom {
+    font-size: 25px;
+    color: #003f76;
+    margin-bottom: 30px;
+}
+
