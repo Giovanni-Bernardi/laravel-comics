@@ -5,9 +5,7 @@
         </div>
     </div>
     <div class="header-bottom">
-        <a href="{{ route('home')}}">
             <img src="{{ url('/storage/assets/dc-logo.png') }}" alt="">
-        </a>
         <ul>
             @foreach ($linksHeader as $link)
             <li>

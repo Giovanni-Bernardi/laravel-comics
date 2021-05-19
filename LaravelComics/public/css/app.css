@@ -79,7 +79,6 @@
 
 #app #jumbotron {
   height: 450px;
-  margin-top: 20px;
   background-image: url("/storage/assets/jumbotron.jpg");
   background-size: cover;
 }
@@ -229,6 +228,10 @@
   margin-top: 10px;
 }
 
+#app main .section-one ul li a {
+  text-decoration: none;
+}
+
 #app main .section-one ul li a div.box {
   width: 250px;
 }
@@ -240,13 +243,15 @@
 
 #app main .section-one ul li a div.box div.box-img img {
   width: 100%;
+  padding: 20px;
 }
 
 #app main .section-one ul li a div.box h3 {
   color: #ffffff;
   text-transform: uppercase;
-  margin-top: 10px;
+  margin: 10px 19px;
   word-break: break-all;
+  text-decoration: none;
 }
 
 #app main .section-one div.load-button {
