@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Laravel Comics</title>
+  <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
   <!-- LINK CSS -->
-  <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
+  <link rel="stylesheet" href="{{ assets('/css/app.css') }}">
   {{-- favicon --}}
-  <link rel="shortcut icon" sizes="114x114" href="{{{ asset('/storage/assets/favicon.ico') }}}">
+  <link rel="shortcut icon" sizes="114x114" href="{{{ assets('/storage/assets/favicon.ico') }}}">
   {{-- Google Fonts --}}
   <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
@@ -19,12 +19,11 @@
     crossorigin="anonymous" />
   <!-- VUE -->
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
 <body>
-    <div id="app">
-        @include('components.header')
-        @yield('content')
-        @include('components.footer')
-    </div>
+  @include('components.header')
+  @yield('content')
+  @include('components.footer')
 </body>
 
 </html>

@@ -1,67 +1,55 @@
 @extends('layouts.main-layout')
 @section('content')
-    <main>
-        <section class="section-one">
-            <div class="current">
-                <h2>
-                    current series
-                </h2>
-            </div>
-            <ul>
-                @foreach ($data as $item)
-                    <li>
-                        <a href="{{route('elem', $loop->index )}}">
-                            <div class="box">
-                                <div class="box-img">
-                                    <img src="{{$item['thumb']}}" alt="">
-                                </div>
-                                <h3>
-                                    {{$item['series']}}
-                                </h3>
-                            </div>
-                        </a>
-                    </li>
-                @endforeach
-            </ul>
-            <div class="load-button">
-                <button>
-                    LOAD MORE
-                </button>
-            </div>
-        </section>
-        <section class="section-two">
-            <ul>
-                <li>
-                    <img src="{{ url('/storage/assets/buy-comics-digital-comics.png') }}" alt="">
-                    <span>
-                        digital comics
-                    </span>
-                </li>
-                <li>
-                    <img src="{{ url('/storage/assets/buy-comics-merchandise.png') }}" alt="">
-                    <span>
-                        dc merchandise
-                    </span>
-                </li>
-                <li>
-                    <img src="{{ url('/storage/assets/buy-comics-subscriptions.png') }}" alt="">
-                    <span>
-                        subscription
-                    </span>
-                </li>
-                <li>
-                    <img src="{{ url('/storage/assets/buy-comics-shop-locator.png') }}" alt="">
-                    <span>
-                        comic shop locator
-                    </span>
-                </li>
-                <li>
-                    <img id="img-svg" src="{{ url('/storage/assets/buy-dc-power-visa.svg') }}" alt="">
-                    <span>
-                        dc power visa
-                    </span>
-                </li>
-            </ul>
-        </section>
-    </main>
+<main>
+  <section class="jumbotron">
+
+  </section>
+
+  <section class="comics">
+    <div class="container">
+      <h2>CURRENT SERIES</h2>
+      <ul>
+        @foreach ($data as $comic)
+        <li>
+          <div class="images">
+            <img src="{{$comic['thumb']}}" alt="">
+          </div>
+          <p>{{$comic['series']}}</p>
+        </li>
+        @endforeach
+      </ul>
+      <div class="btn">
+        <button id="load" type="button" name="button">LOAD MORE</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="icons">
+    <div class="container">
+      <ul>
+        <li>
+          <img src="{{ url('/storage/assets/buy-comics-digital-comics.png') }}" alt="">
+          <p>DIGITAL COMICS</p>
+        </li>
+        <li>
+          <img src="{{ url('/storage/assets/buy-comics-merchandise.png') }}" alt="">
+          <p>DC MERCHANDISE</p>
+        </li>
+        <li>
+          <img src="{{ url('/storage/assets/buy-comics-subscriptions.png') }}" alt="">
+          <p>SUBSCRIPTION</p>
+        </li>
+        <li>
+          <img src="{{ url('/storage/assets/buy-comics-shop-locator.png') }}" alt="">
+          <p>COMIC SHOP LOCATOR</p>
+        </li>
+        <li>
+          <img id="svg" src="{{ url('/storage/assets/buy-dc-power-visa.svg') }}" alt="">
+          <p>DC POWER VISA</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
 @endsection

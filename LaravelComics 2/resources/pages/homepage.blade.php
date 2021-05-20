@@ -29,23 +29,23 @@
     <div class="container">
       <ul>
         <li>
-          <img src="{{ url('/storage/assets/buy-comics-digital-comics.png') }}" alt="">
+          <img src="{{ assets('/storage/assets/buy-comics-digital-comics.png') }}" alt="">
           <p>DIGITAL COMICS</p>
         </li>
         <li>
-          <img src="{{ url('/storage/assets/buy-comics-merchandise.png') }}" alt="">
+          <img src="{{ assets('/storage/assets/buy-comics-merchandise.png') }}" alt="">
           <p>DC MERCHANDISE</p>
         </li>
         <li>
-          <img src="{{ url('/storage/assets/buy-comics-subscriptions.png') }}" alt="">
+          <img src="{{ assets('/storage/assets/buy-comics-subscriptions.png') }}" alt="">
           <p>SUBSCRIPTION</p>
         </li>
         <li>
-          <img src="{{ url('/storage/assets/buy-comics-shop-locator.png') }}" alt="">
+          <img src="{{ assets('/storage/assets/buy-comics-shop-locator.png') }}" alt="">
           <p>COMIC SHOP LOCATOR</p>
         </li>
         <li>
-          <img id="svg" src="{{ url('/storage/assets/buy-dc-power-visa.svg') }}" alt="">
+          <img id="svg" src="{{ assets('/storage/assets/buy-dc-power-visa.svg') }}" alt="">
           <p>DC POWER VISA</p>
         </li>
       </ul>

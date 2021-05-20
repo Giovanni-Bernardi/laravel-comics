@@ -73,7 +73,7 @@
     
     #jumbotron{
         height: 450px;
-        background-image: url("/storage/assets/images/jumbotron.jpg");
+        background-image: url("/storage/assets/jumbotron.jpg");
         background-size: cover;
     }
 
@@ -81,7 +81,7 @@
 
         .footer-top{
             height: 450px;
-            background-image: url("/storage/assets/images/dc-logo-bg.png"), url("/storage/assets/images/footer-bg.jpg");
+            background-image: url("/storage/assets/dc-logo-bg.png"), url("/storage/assets/footer-bg.jpg");
             background-position: right 130px center, center;
             background-repeat: no-repeat;
             background-size: auto, cover;
